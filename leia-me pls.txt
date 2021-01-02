@@ -1,0 +1,38 @@
+Versão Final dessa merda de jogo escrita por um viado arrombado.
+
+O Melhor Eroge de Todos v1.00 Full
+
+Informações
+
+Este jogo foi criado para um "Concurso de Humor" do VisualNews.net.  Se você curtiu OMGWTFOTL, provavelmente vai curtir isso. Eu diria que a classificação etária dele é 15+ devido ao frequente uso da palavra "fodi."
+
+Apesar do título, não tem sexo. Foi mal.
+
+Equipe
+
+    * Planejamento - Moogy-heika-dono-sama
+    * Cenário - Moogy-heika-dono-sama
+    * Gráficos - Moogy-heika-dono-sama
+    * Programação - Moogy-heika-dono-sama
+    * Teste - Moogy-heika-dono-sama
+    * Música - RPG Maker e Moogy-heika-dono-sama
+    * Engine - ONscripter (http://nscripter.insani.org)
+	* Tradução - Deca
+    * Agradecimento especial - Kefit, tinsmith, ASCII (ou quem quer que seja que faz o RPG Maker hoje me dia), Megumi Hayashibara, Misu, mirrormoon, insani, Haeleth, e todos os fãs tradutores de novelas visuais
+	* Agradecimento ao Sonako-Hako, grupo do vietnamita, o qual roubei o script para conseguir usar caracteres com acentos, ao tenebris-chan por revisar e também a minha esposa, 椎名　京.
+
+Informações Técnicas
+
+Escrito para ONscripter. Eu peguei parte do código de tinsmith's Kira -snowdrop-; isto é, as transições e caixa de texto foram tiradas disso. Minhas desculpas ao programador disso.
+
+Links
+
+tsukuru.info - http://www.tsukuru.info
+TBEE official site - http://www.tsukuru.info/tbee/
+ONscripter site - http://nscripter.insani.org
+VisualNews - http://www.visualnews.net
+Knox Translations - https://knox.fansub.com.br/
+
+Sinto muito pelo atraso em lançar isso.
+Todos os anos eu esquecia de postar essa merda porque é uma grande merda e eu não gosto mais do heika-dono-sama porque ele é um localizador viado.
+Nota de tradução: a parte com caracteres quebrados deveria estar em runas, mas a engine não suporta elas.

@@ -1,0 +1,389 @@
+﻿;gameid O Melhor Eroge de Todos
+
+;Super awesomeness begin
+;Programming, translation, writing, artwork, music, scenario, character design by Moogy
+;Additional imagery provided by Google
+;Directed by Moogy
+;A Moogy production
+
+;btw I stole a lot of this code from Haeleth's Kira -snowdrop- translation I hope he doesn't mind
+
+*define
+
+kidokuskip
+nsa
+
+caption "O Melhor Eroge de Todos"
+versionstr "O Melhor Eroge de Todos"," version 99.99-en"
+
+;The above and below define quite a lot of stuff, too lazy to comment it all
+
+savename ^Save^,^Load^,^File ^
+savenumber 20 ;amount of saves
+effectblank 0
+mp3fadeout 1500 ;fadeout time for mp3 playback
+transmode alpha 
+selectcolor #ffffff,#cccccc
+menuselectcolor #ffffff,#aaaaaa,#999999
+menuselectvoice "","","","","","",""
+humanz 10
+rmenu ^Save this shit^,save,^Load some other gay shit^,load,^Look at the porn^,windowerase,^Stop playing this garbage^,reset ;rclick menu
+menusetwindow 20,20,0,2,0,0,#333333
+defaultfont "Sazanami Mincho Subset"
+killmenu 1
+killmenu 1
+killmenu 4
+killmenu 4
+killmenu 3
+defaultspeed 12,6,0 ;msg speed
+underline 479
+effect 2,10,1500
+effect 3,10,500
+effect 4,10,3000
+effect 5,10,50
+effect 6,10,400
+effect 7,10,6000
+effect 8,10,4000
+effect 9,10,500
+effect 10,10,1000
+effect 11,10,125
+windoweffect 10,50
+
+;K now the game works let's make some more shit
+
+game
+
+*start
+
+!sd
+setwindow 20, 359, 29, 4, 21, 21, 0, 7, 20, 1, 1, #3677a1,5,347,635,475
+
+bg white,10
+bg "moogy.png",10
+delay 500
+bg "moogy2.png",10
+delay 1000
+bg white,10
+bg black,10
+
+;This is the introduction thing. Fade in and fade out.
+
+bg "title.png",2
+btndef "op_btn.png"
+btn 1,262,315,94,23,0,0
+btn 2,261,356,94,22,0,23
+btn 3,284,396,56,23,0,45
+
+;Button on the title screen. Self-explanatory.
+
+*op_loop
+bg "title.png",3
+mp3loop "bgm\op.mp3"
+btnwait2 %50
+if %50==1 goto *game_start
+if %50==2 goto *game_load
+if %50==3 goto *game_end
+if %50==-1 goto *op_loop
+goto *op_loop
+
+;I forgot what this does, it loops the BGM or something.
+
+*game_load
+bg black,3
+systemcall load
+goto *op_loop
+
+;Duh
+
+*game_end
+bg white,10
+end
+
+;Duh 
+
+*game_start
+
+bg "startlol.png",10
+bg black,10
+
+;Duh
+
+mp3loop "bgm\happy.mp3"
+
+!sd
+
+;The rest of this should be self-explanatory. Syntax is easy.
+
+^ Eu acordei ao som da minha irmãzinha sem laços sanguíneos gritando "onii-chan," como de costume.\
+^ Vai ser mais um longo dia.\
+^ Bem,@ isto é o que eu gostaria de dizer,@ mas há algumas coisas nas quais eu preciso contar a você antes de jogar este jogo.\
+^ Como pode ver, este não é um jogo qualquer.@ Este é o melhor eroge já feito.@ Ele possui muito ero, e ainda mais cg, a ponto de você sequer ser capaz de imaginar.\
+^ Alguns poderiam chamá-lo de,@ bem,@ o quintessencial dos eroges.\
+^ Há mais de oito mil heroínas conquistáveis, com mais de cem good e bad endings cada.\
+^ O script possui mais de 5000mb.@ O patch final ainda vai levar tanto tempo para ficar pronto que você vai acabar morrendo antes de ver ele chegando na metade.\
+^ E também, tenha certeza de que você definitivamente possui mais de 18 anos antes de jogar este jogo.@ Ele contém situações adultas como representações de relações sexuais e piadas muito ruins.\
+^ A propósito, eu peço desculpas por colocar mais de 8000 piadas neste script.\
+^ Também peco desculpas por quebrar a quarta parede.\
+^ De qualquer forma, meu nome é Muugi Muugi.@ Sou um estudante do terceiro ano da Sugoi Gakuen.\
+^ Meu quarto é muito bacana.@ Vamos dar uma olhada nele.\
+
+bg "bg-1.png",2
+
+^ Viu, eu até tenho uma cama e tudo mais.\
+^ Como este jogo é tipo muito avant-garde, não há retratos dos personagens.@ Eu peço desculpas.\
+^ Quero dizer, a não ser que você queira que eu roube artes de outros jogos.\
+^ E ninguém quer isso.@ Eu acho?\
+^ [Nee-chan]
+^ Muugi-kun, já tá na hora do café da manhã!\
+^ A voz da minha irmã vogou pelo corredor de minha casa.@ Acho que é melhor eu ir comer um meronpan ou a merda que seja que os personagens de eroge comem hoje em dia.\
+
+bg "bg-2.png",2
+;Total certeza que e a mesma fonte de imagem que usei para o meu fodendo 100 sec. Kitchen Battle simfile. The fuck.
+
+^ [Nee-chan]
+^ Ah, aí esta você, Muugi-kun! Por favor, aproveite minha deliciosa comida sem quaisquer laços sanguíneos.\
+^ [Muugi]
+^ E como eu irei, minha deliciosa irmã sem quaisquer laços sanguíneos!\
+
+bg black,5
+
+^ E então, eu fodi ela.\
+
+bg "bg-2.png",2
+
+^ [Nee-chan]
+^ Oh, esse foi um ataque bem empolgante quase que beirando o incesto. Vamos fazer isso de novo quando você voltar da escola!\
+^ [Muugi]
+^ Desculpa, não posso. Eu tenho um compromisso com uma das minhas vinte e sete osananajimis depois da escola.\
+^ [Nee-chan]
+^ :(@ Bem, em todo caso, divirta-se na escola!
+^ Eu fiz um bentou para você.\
+^ A propósito, minha contagem de bentous é 157. Eu sou como o fodendo Yuuji. Com menos Reiji Maigo e toda aquela merda.\
+^ [Muugi]
+^ Ja ne!\
+^ Nota de tradução: Ja ne significa "até mais."\
+
+
+bg "bg-3.png",3
+
+^ Então, eu estou indo para a escola agora. Se eu fosse Shiki ou Shirou, eu estaria perdendo completamente minha merda agora devido a uma variedade de vampiros, magos e etc.\
+^ Sim, ou algo nesse sentido?\
+^ Sabe, essa vizinhança é na verdade muito chata.\
+^ Ainda não fui atacado por vampiros, demônios, magos, ogros, yashas, youkais, humanos, fadas, florestas vivas, ORTs, jam, Maeda Jun, Leiblich Pharmaceutical, fiddler crabs, mecha musume,\
+^ Takamachi Nanoha, Sugita Tomokazu, Nasu Kinoko, Hakurei Reimu, Id, Jesus, robôs gigantes, mikos, tsunderes, yanderes, o próprio mundo, Witsuarunemitea, Ryuuguu Rena,\
+^ ou qualquer Servo de qualquer Guerra do Cálice Sagrado.\
+^ Mas tenho certeza de que em breve algo interessante vai acontecer.\
+^ De qualquer forma, eu estou andando pela rua e me deparo com um rosto familiar.\
+^ [Osananajimi #23]
+^ Ora, se não é o Muugi-chan! Eu não vejo você desde que estava te observando dormir com meus binóculos essa manhã!\
+^ Sim,@ ela é meio que...@ uma stalker.\
+^ [Muugi]
+^ Yo.\
+
+bg black,5
+
+^ Então, eu fodi ela.\
+
+bg "bg-3.png",2
+
+^ [Osananajimi #23]
+^ :O@ Essa não, vou me atrasar para o trabalho do conselho estudantil! Até mais, Muugi-chan!\
+^ Bem, isso foi fácil. Normalmente ela fala comigo por cerca de três minutos antes de eu foder ela. O encontro de hoje levou quatro minutos.\
+^ Eu sou um protagonista ocupado, sabia? Não posso me dar ao luxo de desperdiçar meu tempo com personagens aleatórias.\
+^ Assim como a Osananajimi #23. Ela é completamente inútil. A rota dela é uma merda. Não jogue.\
+^ Bom, tanto faz, vou me adiantar e spoilar a rota toda. Na rota dela, você é teletransportado para o que parece ser a Europa medieval.@ Exceto pelo fato de que tem robôs.\
+^ Sim, e basicamente, após sessenta horas de gameplay de um SRPG superépico, você descobre que era realmente um futuro distante, e o mundo foi destruído em uma guerra nuclear no ano de 2300 D.C.\
+^ Como eu disse, é uma merda. O sci-fi SRPG de oitenta horas que se passa no ano de 3000 A.C é uma rota muito melhor. Jogue essa. É a rota da Imouto #12.\
+^ Ah, sim, hora de ir para escola.\
+
+bg black,2
+
+^ Er, bem, na verdade, durante o caminho, eu fiz sexo mais umas cinco ou seis vezes com diversas senseis, nekomimis, lolis, etc.\
+^ Eu normalmente tenho que sair para escola uma hora mais cedo por causa das várias garotas que eu preciso foder antes da aula.@ Acaba ficando bem irritante, sabia?\
+^ Bem, eu eventualmente cheguei na escola e fui direto para a sala de aula.\
+
+bg "bg-4a.png",2
+
+^ [Sensei #15]
+^ Certo, Muugi, e quanto a você!\
+^ Merda, eu estava dormindo.@ Como esse é um eroge, você precisa dormir na aula em um eroge.\
+^ [Muugi]
+^ Tá, o que quer que eu faça?\
+^ [Sensei #15]
+^ Leia a passagem na página 579, por favor.\
+^ Puta merda, está em português. Sou uma merda em português!\
+^ [Muugi]
+^ ザ　レーン　イン　スペイン　フォールズ　メーンリー　アン　ザ　プレーンズ\
+;Aparentemente ONscripter não exibe texto em runas ou algo assim. Bem, tanto faz.
+^ [Sensei]
+^ Muito bem!\
+
+bg black,5
+
+^E então, eu fodi ela.\
+
+bg "bg-4a.png",2
+
+^ De repente, aconteceu.@ Este jogo se tornou um ripoff ainda pior de OMGWTFOTL.\
+^ Digo,@ esquece.\
+^ De qualquer forma.@ De repente eu tomei um baita susto! Nasu Kinoko finalmente violou meus sentidos! Este era um lindo dia!\
+
+bg "bg-4b.png",5
+mp3loop "bgm\evil.mp3"
+
+;Sei la
+^ Esta cadeira.@ A maconha da legião.@ Rei Arthur era uma garota.@ Tudo faz sentido agora.\
+^ De minha boca eu comecei a recitar um poema.@ Um poema ensinado a mim por minha falecida mãe antes dela morrer.@ Significa que eu sou o escolhido.@ O destinado.\
+^ [Muugi]
+^ Moogy esperou. As luzes acima dele piscaram e acenderam do nada. Havia um eroge a ser jogado.\
+^ [Muugi]
+^ Ele não o entendia, mas fazia anos que estava esperando uma tradução.\
+^ [Muugi]
+^ Os avisos dele a Tanaka Romeo não foram ouvidos e agora era tarde demais. Já era muito tarde agora.\
+^ [Muugi]
+^ Moogy era um fã de eroges há quatorze anos. Quando ele era jovem e assistia animes, ele disse para Nasu:\
+^ [Muugi]
+^ "Eu quero jogar os eroges do Nasu."\
+^ [Muugi]
+^ Nasu então respondeu "Não! Você SERÁ MORTO PELO MOE".\
+^ [Muugi]
+^ Houve um tempo em que eu acreditei nele. Então ele esqueceu conforme ficou mais velho.\
+^ [Muugi]
+^ Mas agora, no porão da casa de sua mãe, ele sabia onde estavam os eroges.\
+^ [Muugi]
+^ "Aqui é o Maeda Jun" o rádio chiou. "Você deve jogar os eroges!"\
+^ [Muugi]
+^ Então Moogy pegou seu teclado e inicializou Planetarian.\
+^ [Muugi]
+^ "ELE VAI NOS JOGAR" disse os eroges.\
+^ [Muugi]
+^ "Eu vou atirar nele" disse o fiddler crab, e atirou com o canhão elétrico. Moogy apertou a tecla enter e tentou passar por ele.\
+^ [Muugi]
+^ Mas o poder se foi e ele não foi capaz de jogar.\
+^ [Muugi]
+^ "Não! Eu preciso jogar os eroges" ele gritou.\
+^ [Muugi]
+^ O rádio então disse "Não, Moogy. Você é os eroges".\
+^ [Muugi]
+^ E então Moogy era um eroge.\
+
+bg "bg-4a.png",2
+mp3loop "bgm\happy.mp3"
+
+^ Inopinadamente como aparenta, minha visão esvaneceu no ar translúcido.\
+^ Eu decidi matar o restante das aulas.\
+^ Então eu pulei da janela.\
+
+bg "bg-5.png",2
+
+^ Eu então decidi seguir em direção ao parque, afinal essa parte é uma grande paródia a Tsukihime.\
+^ Eu sentei no banco e comecei a refletir sobre minha vida.@ Meu episódio anterior me colocou em um clima nostálgico.\
+^ Sabe, tudo começou quando eu estava na tenra idade de 3 1/2.\
+^ Meus pais faleceram em um infortuno acidente de carro.\
+^ Ao menos, essa foi a explicação que "eles" deram.\
+^ Mas eu sabia a verdade.\
+^ O que realmente aconteceu naquele dia...\
+
+bg "bg-6.png",3
+mp3loop "bgm\evil.mp3"
+
+^ Foi em um cegante e claro dia de inverno.@ Não, não, está totalmente errado.\
+^ Foi em um pacífico dia de outono. Meus pais e eu estávamos sentados tranquilamente do lado de fora.@ Pacificamente.\
+^ SUBITAMENTE FOMOS ATACADOS POR UM VAMPIRO DEMÔNIO ZUMBI E TODOS NÓS MORREMOS.\
+^ Mas@ meu corpo@ era feito de espadas.\
+^ Por isso eu não morri.\
+
+bg "bg-5.png",2
+
+^ Foi isso o que realmente aconteceu.@ Sério.\
+^ Desde então, eu estou fugindo.@ De uma maligna corporação de vampiros demônios malignos.@ Eles mataram meus pais.\
+^ Sempre que sou atacado dessa forma, normalmente siginifca que um maligno vampiro demônio zumbi está por perto.\
+^ Por isso, acho que está na hora de me mudar para outra cidade.\
+^ Eu nunca a esquecerei, Osananajimi #52.@ Nem você, Imouto #16.@ E especialmente você, Loli #71.\
+^ Mas eu preciso ir antes que os malignos vampiros demônios zumbis destruam tudo o que eu amo mais uma vez.\
+^ Sayonara.\
+^ Nota de tradução: "Sayonara" significa "adeus."\
+
+
+bg "bg-7.png",2
+
+^ Eu segui através de uma passagem na floresta.\
+^ Mais uma vez, eu tive que dizer adeus à minha idílica vida de foder com cada fêmea que eu cruzo.\
+^ Suspira.\
+^ Mas,@ quer saber?\
+^ Já estou de saco cheio dos malignos vampiros demônios zumbis mandando na minha vida.@ Eles não têm o direito de destruir tudo aquilo que eu trabalhei tanto para conseguir.\
+^ Por isso, ao invés de fugir...@ Eu lutarei contra os malignos vampiros demônios zumbis.\
+^ Eu decidi voltar à escola.\
+
+bg "bg-8.png",2
+mp3loop "bgm\happy.mp3"
+
+^ Ah, parece que meu amigo, Suginami Genérico/Clone do Arihiko, estava dando um rolê pelo pátio da escola.\
+^ Acho que ele também decidiu matar aula hoje.\
+^ [Muugi]
+^ Yo.\
+^ [Suginami Genérico/Clone do Arihiko]
+^ Ahhhh!!!!!@
+^ Ah,@ é só você,@ Muugi.\
+^ [Suginami Genérico/Clone do Arihiko]
+^ Poxa, você quase me matou do coração.\
+^ [Muugi]
+^ Desculpa. Mas você deveria frequentar mais as aulas, não?\
+^ [Suginami Genérico/Clone do Arihiko]
+^ Ah, sim, a aula.@
+^ Aquela coisa que você não vai faz tempo.\
+^ [Muugi]
+^ Hã?@
+^ Não,@ deus,@ essa não.\
+mp3loop "bgm\evil.mp3"
+^ Eu acabei de perceber.@ Os olhos do Suginami Genérico/Clone do Arihiko estavam emanando um brilho vermelho.\
+^ A propósito, olhos humanos normalmente não brilham com um vermelho-vivo. Digo, no caso de você não saber por que estou em choque.\
+^ [Suginami Genérico/Clone do Arihiko]
+^ Parece que você descobriu.@
+^ Sim, Muugi, eu estive seguindo seu rastro.\
+^ [Suginami Genérico/Clone do Arihiko]
+^ O Lord Hyakugojyuuichi confiou a mim o dever de ter certeza de que você não escaparia das mãos dele.\
+^ [Suginami Genérico/Clone do Arihiko]
+^ Então, fala aí, o que você planeja fazer aqui?\
+^ [Muugi]
+^ Tomá no cu você pwn rofl\
+^ Então eu o acertei com um combo hit de 5000000000 envolvendo gunblades, machine guns e olhos-laser e cogumelos gigantes.\
+^ [Suginami Genérico/Clone do Arihiko]
+^ Ai meu deus, eu estou morto.\
+mp3loop "bgm\happy.mp3"
+^ [Muugi]
+^ Fode sim putas, eu detono.\
+^ De repente, eu percebi que eu havia atraído uma multidão. Toda a escola estava olhando eu devastar aquele cara.\
+^ [Estudante]
+^ Você detona, Muugi-sama!\
+^ [Muugi]
+^ Eu que mando nessa porra!\
+
+bg black,5
+
+^ E então eu fodi cada garota da escola. Assim como sempre.\
+
+bg "bg-8.png",2
+
+^ De repente, eu estava terminando com a Iinchou #41, e um estrondo retumbante ecoou pelo pátio.\
+^ Eu olhei para cima e vi um rosto familiar.\
+^ Era...\
+
+bg black,2
+
+^ CONTINUA\
+^ Sim, você terá que esperar para ver a conclusão desta epopeia, infelizmente.\
+^ Lamentavelmente, o concurso para o qual este jogo foi criado delimitava um limite de cinco minutos, e temo que já extrapolei ele.\
+;Na real, ficou com cerca de cinco minutos
+^ Você poderá ver o épico confronto entre Muugi Muugi e as FORÇAS DO MAL no próximo fascículo desta serie.\
+^ Será intitulado de "O Melhor Eroge de Todos: Parte Dois: O Melhor Eroge de Todos Fica Ainda Melhor."\
+^ Espere ansioso por isso.\
+^ Nos vemos na próxima missão.\
+
+delay 500
+
+^ Aviso Legal: o texto deste jogo esperançosamente está protegido por leis de direitos autorais. Você não deve jogar este jogo se você fica ofendido com a palavra "fodi",\
+^ ou se você está grávido, assim como ficar gravida, ou se faz fanfics mpreg Harry x Snape.@ Ao ler este texto você concorda em enviar no minimo 100 dólares para o Moogy-heika-dono-sama (e ao Deca-kyou).\
+^ Este é um contrato juridicamente vinculativo, e violadores estão sujeitos à processo em todas as instâncias da lei.\
+
+reset
