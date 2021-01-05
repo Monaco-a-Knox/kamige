@@ -17,6 +17,7 @@ Equipe
     * Teste - Moogy-heika-dono-sama
     * Música - RPG Maker e Moogy-heika-dono-sama
     * Engine - ONscripter (http://nscripter.insani.org)
+Equipe de Tradução	
 	* Tradução - Deca
     * Agradecimento especial - Kefit, tinsmith, ASCII (ou quem quer que seja que faz o RPG Maker hoje me dia), Megumi Hayashibara, Misu, mirrormoon, insani, Haeleth, e todos os fãs tradutores de novelas visuais
 	* Agradecimento ao Sonako-Hako, grupo do vietnamita, o qual roubei o script para conseguir usar caracteres com acentos, ao tenebris-chan por revisar e também a minha esposa, 椎名　京.
