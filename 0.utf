@@ -27,7 +27,7 @@ selectcolor #ffffff,#cccccc
 menuselectcolor #ffffff,#aaaaaa,#999999
 menuselectvoice "","","","","","",""
 humanz 10
-rmenu ^Save this shit^,save,^Load some other gay shit^,load,^Look at the porn^,windowerase,^Stop playing this garbage^,reset ;rclick menu
+rmenu ^Salvar essa merda^,save,^Carregar outra viadagem^,load,^Olhar uma putaria^,windowerase,^Fechar esse lixo^,reset ;rclick menu
 menusetwindow 20,20,0,2,0,0,#333333
 defaultfont "Sazanami Mincho Subset"
 killmenu 1
